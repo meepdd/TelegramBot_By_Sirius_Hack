@@ -52,7 +52,7 @@ async def echo(message: types.Message):
     else:
         # Всё, что не попадает под текст
         await message.answer("Сформулируй свой вопрос через FAQ!🤩"
-                             "\n https://docs.google.com/document/d/1CaDX8YLVpDlZWWkpmcbaNQHu8AwieoEMdfdiMdcSt0s/edi ")
+                             "\n https://docs.google.com/document/d/1CaDX8YLVpDlZWWkpmcbaNQHu8AwieoEMdfdiMdcSt0s/edit ")
 
 
 if __name__ == '__main__':
