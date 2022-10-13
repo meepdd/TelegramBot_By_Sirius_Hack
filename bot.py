@@ -8,17 +8,6 @@ import numpy as np
 
 TOKEN = '5398472247:AAFEpqmRrwHzdkNyDtamhtw8gP-9NywpSlU'
 
-HEROKU_APP_NAME = os.getenv('iwannakill')
-
-# webhook settings
-WEBHOOK_HOST = f'https://{"iwannakill"}.herokuapp.com'
-WEBHOOK_PATH = f'/webhook/{"5398472247:AAFEpqmRrwHzdkNyDtamhtw8gP-9NywpSlU"}'
-WEBHOOK_URL = f'{"andnjcjd"}{0}'
-
-# webserver settings
-WEBAPP_HOST = 'https://iwannakill.herokuapp.com'
-WEBAPP_PORT = os.getenv('PORT', default=8000)
-
 bot = Bot(token=TOKEN)
 
 dp = Dispatcher(bot)
