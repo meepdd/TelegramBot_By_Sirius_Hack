@@ -4,4 +4,4 @@
 [![GitHub](https://img.shields.io/github/license/otter18/telegram-bot-template)](https://github.com/otter18/telegram-bot-template/blob/main/LICENSE)
 
 
-![GitHub tag (latest by date)](https://github.com/meepdd/TelegramBot_By_Sirius_Hack/blob/main/Задание%20на%20хакатон.pdfe)
+![GitHub tag (latest by date)](https://github.com/meepdd/TelegramBot_By_Sirius_Hack/blob/main/Задание%20на%20хакатон.pdf)
