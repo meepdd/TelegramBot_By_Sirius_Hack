@@ -1,14 +1,26 @@
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
+import os
 
 import pandas as pd
 import numpy as np
 
 TOKEN = '5398472247:AAFEpqmRrwHzdkNyDtamhtw8gP-9NywpSlU'
 
+HEROKU_APP_NAME = os.getenv('iwannakill')
+
+# webhook settings
+WEBHOOK_HOST = f'https://{"iwannakill"}.herokuapp.com'
+WEBHOOK_PATH = f'/webhook/{"5398472247:AAFEpqmRrwHzdkNyDtamhtw8gP-9NywpSlU"}'
+WEBHOOK_URL = f'{"andnjcjd"}{0}'
+
+# webserver settings
+WEBAPP_HOST = 'https://iwannakill.herokuapp.com'
+WEBAPP_PORT = os.getenv('PORT', default=8000)
 
 bot = Bot(token=TOKEN)
+
 dp = Dispatcher(bot)
 
 df = pd.read_csv('FAQ_Database.csv', sep=',', header=None)
@@ -45,3 +57,12 @@ async def echo(message: types.Message):
 
 if __name__ == '__main__':
     executor.start_polling(dp)
+    logging.basicConfig(level=logging.INFO)
+    start_webhook(
+        dispatcher=dp,
+        webhook_path=WEBHOOK_PATH,
+        skip_updates=True,
+        on_startup=on_startup,
+        on_shutdown=on_shutdown,
+        host=WEBAPP_HOST,
+        port=WEBAPP_PORT,)
