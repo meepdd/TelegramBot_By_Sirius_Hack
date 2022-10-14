@@ -4,7 +4,6 @@
 [![GitHub](https://img.shields.io/github/license/otter18/telegram-bot-template)](https://github.com/otter18/telegram-bot-template/blob/main/LICENSE)
 
 
-![GitHub tag (Презентация)](https://github.com/meepdd/TelegramBot_By_Sirius_Hack/blob/main/Задание%20на%20хакатон.pdf)
 
 Проект создавался в рамках хакатона }{аckathon в АНО ВО "Колледж "Сириус"
 Кейс от Банка "Открытие"
