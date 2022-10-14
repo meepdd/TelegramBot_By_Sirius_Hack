@@ -26,7 +26,8 @@ data = np.rot90(data)
 
 @dp.message_handler(commands=['start']) #функция старта и описания бота
 async def process_start_command(message: types.Message):
-    await message.reply("Привет!🤖\nЭто поддержка Банка «Открытие» 🚀 \n Пиши вопрос или выбирай из списка, "
+    await message.reply("Привет, на связи 000-тто!🤖 Возникли вопросы? "
+                        "\nЭто поддержка Банка «Открытие» 🚀 \n Пиши вопрос или выбирай из списка, "
                         "мы постараемся тебе дать инструкцию "
                         "по использованию!🤩 "
                         "\n Вот тебе FAQ, который тебе поможет разобраться с правильной постановкой"
@@ -38,8 +39,14 @@ async def process_start_command(message: types.Message):
                         "\n - Как найти ближайший офис банка"
                         "\n - Как узнать график работы кассы и депозитария"
                         "\n - Как узнать график работы кассы и депозитария"
-                        "\n - Как записаться в офис")
+                        "\n - Как записаться в офис"
+                        "\n Лови стикеры и наслаждайся нашим маскотом!"
+                        "\n https://t.me/addstickers/bot_otkrytye "
+                        )
 
+@dp.message_handler(commands=['stickers'])  # функция stickers
+async def process_sticker_command(message: types.Message):
+    await bot.send_sticker( )
 
 @dp.message_handler(content_types=types.ContentType.ANY) #основная функция бота
 async def echo(message: types.Message):
@@ -52,7 +59,7 @@ async def echo(message: types.Message):
     else:
         # Всё, что не попадает под текст
         await message.answer("Сформулируй свой вопрос через FAQ!🤩"
-                             "\n https://docs.google.com/document/d/1CaDX8YLVpDlZWWkpmcbaNQHu8AwieoEMdfdiMdcSt0s/edit ")
+                             "\n https://docs.google.com/document/d/1CaDX8YLVpDlZWWkpmcbaNQHu8AwieoEMdfdiMdcSt0s/edit")
 
 
 if __name__ == '__main__':
