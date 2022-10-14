@@ -44,10 +44,6 @@ async def process_start_command(message: types.Message):
                         "\n https://t.me/addstickers/bot_otkrytye "
                         )
 
-@dp.message_handler(commands=['stickers'])  # функция stickers
-async def process_sticker_command(message: types.Message):
-    await bot.send_sticker( )
-
 @dp.message_handler(content_types=types.ContentType.ANY) #основная функция бота
 async def echo(message: types.Message):
     messenge = (message.text).lower()
