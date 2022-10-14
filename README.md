@@ -4,4 +4,14 @@
 [![GitHub](https://img.shields.io/github/license/otter18/telegram-bot-template)](https://github.com/otter18/telegram-bot-template/blob/main/LICENSE)
 
 
-![GitHub tag (latest by date)](https://github.com/meepdd/TelegramBot_By_Sirius_Hack/blob/main/Задание%20на%20хакатон.pdf)
+![GitHub tag (Презентация)](https://github.com/meepdd/TelegramBot_By_Sirius_Hack/blob/main/Задание%20на%20хакатон.pdf)
+
+Проект создавался в рамках хакатона }{аckathon в АНО ВО "Колледж "Сириус"
+Кейс от Банка "Открытие"
+
+Запуск бота: 
+
+1 вариант:
+- Скачать архив и запустить в любой среде разработки, поддерживающее py > 3.9 v. и вставить собственный токен.
+2 вариант: 
+- Через VPN запустить и зарегистрироваться в Heroku, запустить на внешнем сервере
